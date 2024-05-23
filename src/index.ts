@@ -23,7 +23,6 @@ app.post("/toQueue", async c => {
 })
 
 
-
 export default {
     fetch: app.fetch,
     async queue(batch: MessageBatch<Error>, env: Bindings) {
@@ -39,9 +38,6 @@ export default {
             } catch(err) {
                 console.log(err);
             }
-            
-
-            
         }
     }
 }
